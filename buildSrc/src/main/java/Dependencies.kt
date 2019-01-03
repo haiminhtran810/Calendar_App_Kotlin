@@ -22,6 +22,8 @@ object Versions {
     val rxJava = "2.2.5"
     val dagger = "2.20"
     val javaxInject = "1"
+    val loggingInterceptor = "3.10.0"
+    val lifecycle = "1.1.1"
 }
 
 object ProjectModules {
@@ -37,7 +39,6 @@ object PluginDependencies {
 object ProjectDependencies {
     val ktlint = "com.github.shyiko:ktlint:${Versions.ktlint}"
     val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
-    val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     val contrain_layout = "com.android.support.constraint:constraint-layout:${Versions.contrain_layout}"
     val supportAppCompat = "com.android.support:appcompat-v7:${Versions.supportLibrary}"
     val junit = "junit:junit:${Versions.junit}"
@@ -54,4 +55,11 @@ object ProjectDependencies {
     val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroid}"
     val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     val javaInject = "javax.inject:javax.inject:${Versions.javaxInject}"
+
+    val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    val gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+    val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+
+    val lifecycle = "android.arch.lifecycle:extensions:${Versions.lifecycle}"
+    val lifecycleTesting = "android.arch.core:core-testing:${Versions.lifecycle}"
 }

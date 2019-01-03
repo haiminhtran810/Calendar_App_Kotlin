@@ -22,11 +22,14 @@ android {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // project dependencies
     implementation project(ProjectModules.domain)
 
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation ProjectDependencies.supportAppCompat
+    // retrofit / network dependencies
+    api ProjectDependencies.retrofit
+    implementation ProjectDependencies.gson
+    implementation ProjectDependencies.loggingInterceptor
 }
