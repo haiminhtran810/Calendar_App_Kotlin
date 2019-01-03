@@ -2,8 +2,8 @@ package home.learn.hmt.calendar_app_kotlin.di
 
 import dagger.Component
 import home.learn.hmt.calendar_app_kotlin.CalendarApp
-import home.learn.hmt.data.di.NetworkModule
-import home.learn.hmt.data.di.RepositoryModule
+import home.learn.hmt.data.di.di.NetworkModule
+import home.learn.hmt.data.di.di.RepositoryModule
 import javax.inject.Singleton
 
 @Singleton
