@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+apply from: '../config/android-common.gradle'
+apply from: '../config/common.gradle'
+
+android {
+    compileSdkVersion Versions.compileSdk
+    defaultConfig {
+        applicationId "home.learn.hmt.calendar_app_kotlin"
+        minSdkVersion Versions.minSdkVersion
+        targetSdkVersion Versions.targetSdk
+        versionCode Versions.releaseVersionCode
+        versionName Versions.releaseVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation ProjectDependencies.kotlin
+    implementation ProjectDependencies.supportAppCompat
+    implementation ProjectDependencies.contrain_layout
+
+    // module dependencies
+    implementation project(ProjectModules.data)
+    implementation project(ProjectModules.domain)
+}
