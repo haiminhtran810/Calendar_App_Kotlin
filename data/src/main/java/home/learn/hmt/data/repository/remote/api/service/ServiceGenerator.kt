@@ -1,12 +1,4 @@
-package home.learn.hmt.data.di.repository.remote.api.service
-
-import com.google.gson.Gson
-import okhttp3.Authenticator
-import okhttp3.Interceptor
-import okhttp3.OkHttpClient
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-import java.util.concurrent.TimeUnit
+package home.learn.hmt.data.repository.remote.api.service
 
 class ServiceGenerator {
     companion object {

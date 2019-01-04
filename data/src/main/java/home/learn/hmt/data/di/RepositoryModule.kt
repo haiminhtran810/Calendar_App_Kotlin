@@ -1,9 +1,9 @@
-package home.learn.hmt.data.di.di
+package home.learn.hmt.data.di
 
 import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
-import home.learn.hmt.data.di.scheduler.AppSchedulerProvider
+import home.learn.hmt.data.scheduler.AppSchedulerProvider
 import home.learn.hmt.domain.scheduler.SchedulerProvider
 import javax.inject.Singleton
 

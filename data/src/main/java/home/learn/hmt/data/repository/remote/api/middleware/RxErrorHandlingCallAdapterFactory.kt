@@ -1,8 +1,4 @@
-package home.learn.hmt.data.di.repository.remote.api.middleware
-
-import retrofit2.CallAdapter
-import retrofit2.Retrofit
-import java.lang.reflect.Type
+package home.learn.hmt.data.repository.remote.api.middleware
 
 /*
 class RxErrorHandlingCallAdapterFactory : CallAdapter.Factory() {

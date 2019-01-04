@@ -32,6 +32,7 @@ dependencies {
     implementation ProjectDependencies.supportAppCompat
     implementation ProjectDependencies.contrain_layout
 
+
     // module dependencies
     implementation project(ProjectModules.data)
     implementation project(ProjectModules.domain)
