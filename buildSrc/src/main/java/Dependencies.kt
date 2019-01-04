@@ -24,6 +24,8 @@ object Versions {
     val javaxInject = "1"
     val loggingInterceptor = "3.10.0"
     val lifecycle = "1.1.1"
+
+    val ahbottomnavigation = "2.3.4"
 }
 
 object ProjectModules {
@@ -59,7 +61,10 @@ object ProjectDependencies {
     val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     val gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+    val retrofit_adapter = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
 
     val lifecycle = "android.arch.lifecycle:extensions:${Versions.lifecycle}"
     val lifecycleTesting = "android.arch.core:core-testing:${Versions.lifecycle}"
+
+    val ahbottomnavigation = "com.aurelhubert:ahbottomnavigation:${Versions.ahbottomnavigation}"
 }
